@@ -9,6 +9,60 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel = "icon" href = "logo.jpg" type = "image/x-icon">
+
+  <style>
+    .overlay {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0, 0.9);
+      overflow-x: hidden;
+      transition: 0.5s;
+    }
+    
+    .overlay-content {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1;
+    }
+    
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .overlay a {font-size: 20px}
+      .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+      }
+    }
+    </style>
+
+
 </head>
 <body>
 
@@ -35,8 +89,27 @@
                 <li class="nav-item">
                  <a class="nav-link disabled" href="#">Disabled</a>
                  </li>
+                 <hr class="d-sm-none">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()"><button type="button" class="btn btn-lg" style="background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%); color: white;"><h3>click for more contents</h3></button>
+                    </span>
             </ul>
+
+
+            <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content">
+                <a class="nav-link active" href="#industriesduringbritishrule">Industries during british rule</a>
+                <a class="nav-link" href="#HowBritishsaweducationinIndia">How British saw education in India</a>
+                <a class="nav-link" href="#Caste and reform during British Rule">Caste and reform during British Rule</a>
+                <a class="nav-link" href="#the making of National Movement">the making of National Movement</a>
+                <a class="nav-link" href="#Model Tenancy Act 2021">Model Tenancy Act 2021</a>
+
+              </div>
+            </div>
+
+
                     <hr class="d-sm-none">
+                   
          </div>
       <div class="col-sm-8">
              <h2 id="industriesduringbritishrule">Crafts and industries of India during British Rule </h2>
@@ -56,12 +129,48 @@
             <hr>
             <h2 id="HowBritishsaweducationinIndia">How British saw education in India</h2>
             <h5> june 5, 2021</h5>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <p>What changes were to be introduced? How were Indians to be educated, “civilized”, and made into what the British believed were “good subjects”? The British could find no simple answers to these questions. They continued to be debated for many years.<br>
+              In 1783 William Jones arrived in Calcutta. He was an expert in law and was a linguist. He had studied Greek and Latin at Oxford, knew French and English.<br>
+              Jones discovered that his interests were shared by many British officials in Calcutta at that time. Englishman like Henry Thomas Colebrooke and Nathaniel Halhed were also busy discovering the ancient Indian heritage, mastering Indian languages and translating Sanskrit and Persian works into English. Together with Jones they set up the Asiatic society of Bengal and started a journal called Asiatic Researches.<br>
+              They believed that Ancient texts not only help the Britishers learn from Indian culture, but it would also help the Indians rediscover their own heritage, and understand the lost glories of their past. In this process the British would become the guardians of Indian culture as well as its masters.<br>
+              With this concept in mind a Madrasa was set up in Calcutta in 1781 and the Hindu college was set up in Benaras in 1791.<br>
+              From the early nineteenth century many British officials began to criticize the Orientalist (those with a knowledge of language and culture of Asia.).<br>
+              Thomas Babington Macaulay saw India as an uncivilized country that needed to be civilized. No branch of eastern knowledge, according to him could be compared to what England had produced.<br>
+              Following Macaulay’s minute, the English Education Act 1835 was introduced. The decision was to make English the medium of instruction for higher Education, and to stop the promotion of Oriental institution like Madrasa in Bengal and Benaras Sanskrit college.<br>
+              In 1854 the President of the board of directors of the East India Company Charles Wood introduced “woods Despatch”. Outlining the educational policy that was to be followed in India, it emphasized once again the practical benefits of a system of European learning, as opposed to Oriental knowledge.<br>
+              New policies appointed a number of government Pandits, each in charge of looking after four to five schools. The task of Pandits was to visit pathshalas and try and improve the standard of teaching. Each guru was asked to submit periodic reports and take classes according to a regular timetable. 
+              </p>
             <br>
             <hr>
             <h2 id="Caste and reform during British Rule">Caste and reform during British Rule</h2>
             <h5> june 5, 2021</h5>
             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              <br>
+              <hr>
+              <h2 id="the making of National Movement">the making of National Movement</h2>
+              <h5> june 5, 2021</h5>
+              <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              <br>
+              <hr>
+              <h2 id="Model Tenancy Act 2021">Model Tenancy Act 2021</h2>
+              <h5> june 5, 2021</h5>
+              <p>To bridge the trust deficit between the landlords and tenants the union government has approved the Model Tenancy Act on June 2, 2021. <br>
+                The Model Tenancy Act aims at opening the vacant housing stock in key rental housing markets in India and reduce litigation. “It is expected to give a flip to private participation in rental housing as a business model for addressing the huge housing shortage” as claimed by the government. The provisions in the new Model Tenancy Act are in line with the drafted tenancy bill in 2019. As per real estate experts, this act will help the government strengthen its ‘Housing for All’ initiative and can fuel the rental housing supply by attracting more investors. <br>
+                The enactment of the New Model Tenancy Law is left to the State and Union Territories, or they can amend their existing rental laws. This act applies to properties used for residential or commercial purposes. The act covers properties located in urban as well as rural areas. <br>
+                <ul>
+                <li>A written agreement between the landlord and tenant is a must for new tenancies and should be submitted to the district Rent Authority</li>
+                <li>The law is not effective for existing tenancies</li>
+                <li>The roles and responsibilities of landlords and tenants are clearly stated in the act</li>
+                <li>Responsibilities of the landlord include painting the house, structural repairs (except the ones caused by tenants), plumbing and electrical wiring maintenance </li>
+                <li>Responsibilities of tenants include socket and kitchen fixtures repairs, cleaning drains, replacement of glass panels in doors and windows, maintenance of open space around, should avoid intentional damage, and notify the damage to the landowner</li>
+                <li>The tenants cannot sublet the property without seeking prior permission from the landlord</li>
+                <li>The tenants are allowed to do structural changes only if they have written consent from the landlord</li>
+                <li>The landlord cannot stop the tenant from using essential services such as water, electricity, etc.</li>
+                <li>The landlord must inform the tenant 24 hours in advance to inspect the premises occupied by the tenant</li>
+                </ul>
+                </p>
+                <br>
+                <hr>
 
 
 
@@ -88,5 +197,23 @@
     <a class="footer-links" href="Contact-Us.html">Contact-Us</a>
   </div>
   
+
+
+
+
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
+
+
+
+
   </body>
   </html>
