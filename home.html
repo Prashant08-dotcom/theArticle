@@ -145,7 +145,6 @@
 <div class="topnav">
   <a href="https://www.instagram.com/thearticle8/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
   <a href="mailto:thearticle35@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-  <input style="width: 30%; border-radius: 2rem;" type="text" id="topsearch" onkeyup="topsearch()" placeholder="Search.." title="Type in a category">
 
 </div>
 
@@ -380,7 +379,7 @@
                         <li>
                         The Rules will come in effect from the date of their publication in the gazette, except for the additional due diligence for significant social media intermediaries, which shall come in effect 3 months after publication of these Rules.</li>
                 </ul>
-                &#169; pib India.
+                
             </p>
             <br>
             <hr>
@@ -480,21 +479,6 @@ function topFunction() {
 
 
 
-//top navbar search
-function topsearch() {
-    let input = document.getElementById('topsearch').value
-    input=input.toLowerCase();
-    let x = document.getElementsByTagName('p');
-      
-    for (i = 0; i < x.length; i++) { 
-        if (!x[i].innerHTML.toLowerCase().includes(input)) {
-            x[i].style.display="none";
-        }
-        else {
-            x[i].style.display="list-item";                 
-        }
-    }
-}
 
 
 
